@@ -2,6 +2,8 @@
 
 echo "Enter the user name::"
 read USERNAME
-echo -s "Enter the Password::"
+echo "Enter the Password::"
+read -s PASSWORD
+echo "USERNAME and PASSWORD is matching"
 echo "******* SUCCESSFULLy LOGIN IN TO THE SYSTEM *******"
 
