@@ -23,7 +23,7 @@ echo "$USERID"
 echo "Script stating executed at --> $TIMESTAMP"
 if [ $USERID -ne 0 ]
 then
-  echo "Error :: You don't have access to execute"
+  echo "Error --> You don't have access to execute"
   exit 1
 fi
 
