@@ -1,6 +1,6 @@
 #!/bin/bash
 
-NUMBER=$1
+NUMBER1=$1
 #-eq
 if [ $NUMBER1 -gt 100 ]
 then
