@@ -9,7 +9,7 @@ LOG_FOLDER_NAME="/var/log/shellscript-logs"
 LOG_FILE=$(echo $0 | cut -d '.' -f1)
 TIMESTAMP=$(date +%Y-%m-%d::%H:%M:%S)
 LOG_FILE_NAME="$LOG_FOLDER_NAME/$LOG_FILE-$TIMESTAMP.log"
-echo "$USERID"
+
 VALIDATE(){
   if [ $1 -ne 0 ]
     then
@@ -19,7 +19,8 @@ VALIDATE(){
       exit 1
     fi
 }
-
+echo "$USERID"
+echo "Script stating executed at --> $TIMESTAMP"
 if [ $USERID -ne 0 ]
 then
   echo "Error :: You don't have access to execute"
