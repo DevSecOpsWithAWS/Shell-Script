@@ -13,10 +13,10 @@ LOG_FILE_NAME="$LOG_FOLDER_NAME/$LOG_FILE-$TIMESTAMP.log"
 VALIDATE(){
   if [ $1 -ne 0 ]
     then
-      echo -e "$2 $G SUCCESS $N"
-    else
-      echo -e "$2 $R FAILURE $N"
+      echo -e "$2 $G FAILURE $N"
       exit 1
+    else
+      echo -e "$2 $R SUCCESS $N"
     fi
 }
 echo "$USERID"
