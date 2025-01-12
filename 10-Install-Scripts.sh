@@ -12,8 +12,9 @@ fi
 
 if [ $? -eq 0 ]
 then
-  dnf lsit installed mysql
-  if [ $? -ne 0 ]
+  dnf list installed mysql
+
+  if [ $? -eq 0 ]
   then
     dnf install mysql -y
     echo "Installing MySQL is SUCCESS"
