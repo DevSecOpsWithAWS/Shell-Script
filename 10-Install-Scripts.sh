@@ -12,7 +12,7 @@ fi
 
 if [ $? -eq 0 ]
 then
-  dnf installed list mysql
+  dnf lsit installed mysql
   if [ $? -ne 0 ]
   then
     dnf install mysql -y
