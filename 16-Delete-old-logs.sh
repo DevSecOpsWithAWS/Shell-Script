@@ -30,7 +30,7 @@ fi
 
 echo "Script stating executed at --> $TIMESTAMP"
 
-FILES_TO_DELETE=$(find $SOURCE_DIR -name "*.log" -mtime +14)
+FILES_TO_DELETE=$(find "$SOURCE_DIR" -name "*.log" -mtime +14)
 
 echo "files to delete $FILES_TO_DELETE"
 
