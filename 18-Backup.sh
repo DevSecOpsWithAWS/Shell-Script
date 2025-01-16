@@ -26,13 +26,13 @@ then
   USAGE
 fi
 
-if [ -d $SOURCE_DIR ]
+if [ ! -d $SOURCE_DIR ]
 then
   echo -e "$SOURCE_DIR doesn't exit please check"
   exit 1
 fi
 
-if [ -d $DIST_DIR ]
+if [ ! -d $DIST_DIR ]
 then
   echo -e "$DIST_DIR doesn't exit please check"
   exit 1
