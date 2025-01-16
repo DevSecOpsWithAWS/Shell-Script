@@ -37,3 +37,14 @@ then
   echo -e "$DIST_DIR doesn't exit please check"
   exit 1
 fi
+
+echo -e "Script is executing at $TIMESTAMP"
+
+FILES=$(find $SOURCE_DIR -name "*log" -mtime +$DAYS)
+
+if [ -n "$FILES" ]
+then
+  echo -e "We have files to delete"
+else
+  echo -e "No Files found older than $DAYS"
+fi
